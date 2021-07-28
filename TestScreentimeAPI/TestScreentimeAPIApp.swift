@@ -32,7 +32,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                     try center.startMonitoring(.daily, during: schedule)
                 }
                 catch {
-                    // do nothing
+                    print ("Could not start monitoring \(error)")
                 }
             case .failure(let error):
                 print("error for screentime is \(error)")
