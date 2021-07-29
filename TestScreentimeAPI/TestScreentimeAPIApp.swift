@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FamilyControls
-import DeviceActivity
 
 @main
 struct TestScreentimeAPIApp: App {
@@ -21,27 +20,30 @@ struct TestScreentimeAPIApp: App {
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         AuthorizationCenter.shared.requestAuthorization { result in
             switch result {
             case .success:
-                let schedule = DeviceActivitySchedule(intervalStart: DateComponents(hour: 0, minute: 0), intervalEnd: DateComponents(hour: 23, minute: 59), repeats: true, warningTime: nil)
-
-                let center = DeviceActivityCenter()
-                do {
-                    try center.startMonitoring(.daily, during: schedule)
-                }
-                catch {
-                    print ("Could not start monitoring \(error)")
-                }
+                break
             case .failure(let error):
                 print("error for screentime is \(error)")
             }
         }
+
+        _ = AuthorizationCenter.shared.$authorizationStatus
+            .sink() {_ in
+            switch AuthorizationCenter.shared.authorizationStatus {
+            case .notDetermined:
+                print("not determined")
+            case .denied:
+                print("denied")
+            case .approved:
+                print("approved")
+            @unknown default:
+                break
+            }
+        }
         return true
     }
-}
-
-extension DeviceActivityName {
-    static let daily = Self("daily")
 }

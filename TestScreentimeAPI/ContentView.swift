@@ -17,6 +17,9 @@ struct ContentView: View {
             isPresented = true
         }
         .familyActivityPicker(isPresented: $isPresented, selection: $model.selectionToDiscourage)
+        Button("Start Monitoring") {
+            model.initiateMonitoring()
+        }
     }
 }
 

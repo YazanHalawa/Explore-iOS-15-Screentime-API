@@ -4,15 +4,48 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BlockerMonitorExtension.xcscheme_^#shared#^_</key>
+		<key>BlockingExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>ShieldActionExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ShieldExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>TestScreentimeAPI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>317CDCB226B0A3F20081FDD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>317CDCC226B0A3FF0081FDD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>317CDCCC26B0A3FF0081FDD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31828F3A26B23067000B9A3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

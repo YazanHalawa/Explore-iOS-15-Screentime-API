@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		316AFB8626B341250091D14C /* MyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317EBA9D26B0CB6C0005ABA0 /* MyMonitor.swift */; };
+		316AFB8726B341350091D14C /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E66AFA26B0D036005600C0 /* MyModel.swift */; };
+		317A24F626B3402300DBC5C2 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317A24F526B3402300DBC5C2 /* CallDirectoryHandler.swift */; };
+		317A24FA26B3402300DBC5C2 /* MonitorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 317A24F326B3402300DBC5C2 /* MonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		317CDCB726B0A3F20081FDD4 /* TestScreentimeAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317CDCB626B0A3F20081FDD4 /* TestScreentimeAPIApp.swift */; };
 		317CDCB926B0A3F20081FDD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317CDCB826B0A3F20081FDD4 /* ContentView.swift */; };
 		317CDCBB26B0A3FE0081FDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317CDCBA26B0A3FE0081FDD4 /* Assets.xcassets */; };
 		317CDCBE26B0A3FE0081FDD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317CDCBD26B0A3FE0081FDD4 /* Preview Assets.xcassets */; };
 		317CDCC826B0A3FF0081FDD4 /* TestScreentimeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317CDCC726B0A3FF0081FDD4 /* TestScreentimeAPITests.swift */; };
 		317CDCD226B0A3FF0081FDD4 /* TestScreentimeAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317CDCD126B0A3FF0081FDD4 /* TestScreentimeAPIUITests.swift */; };
-		317EBA9C26B0CB6C0005ABA0 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 317EBA9B26B0CB6C0005ABA0 /* blockerList.json */; };
-		317EBA9E26B0CB6C0005ABA0 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317EBA9D26B0CB6C0005ABA0 /* ContentBlockerRequestHandler.swift */; };
-		317EBAA226B0CB6C0005ABA0 /* BlockerMonitorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 317EBA9926B0CB6C0005ABA0 /* BlockerMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		31E66AFB26B0D036005600C0 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E66AFA26B0D036005600C0 /* MyModel.swift */; };
 		31E66AFC26B0D03F005600C0 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E66AFA26B0D036005600C0 /* MyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		317A24F826B3402300DBC5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317CDCAB26B0A3F20081FDD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317A24F226B3402300DBC5C2;
+			remoteInfo = MonitorExtension;
+		};
 		317CDCC426B0A3FF0081FDD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 317CDCAB26B0A3F20081FDD4 /* Project object */;
@@ -35,13 +42,6 @@
 			remoteGlobalIDString = 317CDCB226B0A3F20081FDD4;
 			remoteInfo = TestScreentimeAPI;
 		};
-		317EBAA026B0CB6C0005ABA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 317CDCAB26B0A3F20081FDD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 317EBA9826B0CB6C0005ABA0;
-			remoteInfo = BlockerMonitorExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				317EBAA226B0CB6C0005ABA0 /* BlockerMonitorExtension.appex in Embed App Extensions */,
+				317A24FA26B3402300DBC5C2 /* MonitorExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		317A24F326B3402300DBC5C2 /* MonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		317A24F526B3402300DBC5C2 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		317A24F726B3402300DBC5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		317CDCB326B0A3F20081FDD4 /* TestScreentimeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScreentimeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317CDCB626B0A3F20081FDD4 /* TestScreentimeAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreentimeAPIApp.swift; sourceTree = "<group>"; };
 		317CDCB826B0A3F20081FDD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,14 +72,18 @@
 		317CDCCD26B0A3FF0081FDD4 /* TestScreentimeAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestScreentimeAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317CDCD126B0A3FF0081FDD4 /* TestScreentimeAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreentimeAPIUITests.swift; sourceTree = "<group>"; };
 		317CDCDE26B0A6480081FDD4 /* TestScreentimeAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestScreentimeAPI.entitlements; sourceTree = "<group>"; };
-		317EBA9926B0CB6C0005ABA0 /* BlockerMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockerMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		317EBA9B26B0CB6C0005ABA0 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
-		317EBA9D26B0CB6C0005ABA0 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
-		317EBA9F26B0CB6C0005ABA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317EBA9D26B0CB6C0005ABA0 /* MyMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMonitor.swift; sourceTree = "<group>"; };
 		31E66AFA26B0D036005600C0 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		317A24F026B3402300DBC5C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		317CDCB026B0A3F20081FDD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,23 +105,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		317EBA9626B0CB6C0005ABA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		317A24F426B3402300DBC5C2 /* MonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				317EBA9D26B0CB6C0005ABA0 /* MyMonitor.swift */,
+				317A24F526B3402300DBC5C2 /* CallDirectoryHandler.swift */,
+				317A24F726B3402300DBC5C2 /* Info.plist */,
+			);
+			path = MonitorExtension;
+			sourceTree = "<group>";
+		};
 		317CDCAA26B0A3F20081FDD4 = {
 			isa = PBXGroup;
 			children = (
 				317CDCB526B0A3F20081FDD4 /* TestScreentimeAPI */,
 				317CDCC626B0A3FF0081FDD4 /* TestScreentimeAPITests */,
 				317CDCD026B0A3FF0081FDD4 /* TestScreentimeAPIUITests */,
-				317EBA9A26B0CB6C0005ABA0 /* BlockerMonitorExtension */,
+				317A24F426B3402300DBC5C2 /* MonitorExtension */,
 				317CDCB426B0A3F20081FDD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +135,7 @@
 				317CDCB326B0A3F20081FDD4 /* TestScreentimeAPI.app */,
 				317CDCC326B0A3FF0081FDD4 /* TestScreentimeAPITests.xctest */,
 				317CDCCD26B0A3FF0081FDD4 /* TestScreentimeAPIUITests.xctest */,
-				317EBA9926B0CB6C0005ABA0 /* BlockerMonitorExtension.appex */,
+				317A24F326B3402300DBC5C2 /* MonitorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 				317CDCDE26B0A6480081FDD4 /* TestScreentimeAPI.entitlements */,
 				317CDCB626B0A3F20081FDD4 /* TestScreentimeAPIApp.swift */,
 				317CDCB826B0A3F20081FDD4 /* ContentView.swift */,
+				31E66AFA26B0D036005600C0 /* MyModel.swift */,
 				317CDCBA26B0A3FE0081FDD4 /* Assets.xcassets */,
 				317CDCBC26B0A3FE0081FDD4 /* Preview Content */,
 			);
@@ -166,20 +177,26 @@
 			path = TestScreentimeAPIUITests;
 			sourceTree = "<group>";
 		};
-		317EBA9A26B0CB6C0005ABA0 /* BlockerMonitorExtension */ = {
-			isa = PBXGroup;
-			children = (
-				317EBA9B26B0CB6C0005ABA0 /* blockerList.json */,
-				317EBA9D26B0CB6C0005ABA0 /* ContentBlockerRequestHandler.swift */,
-				317EBA9F26B0CB6C0005ABA0 /* Info.plist */,
-				31E66AFA26B0D036005600C0 /* MyModel.swift */,
-			);
-			path = BlockerMonitorExtension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		317A24F226B3402300DBC5C2 /* MonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317A24FB26B3402300DBC5C2 /* Build configuration list for PBXNativeTarget "MonitorExtension" */;
+			buildPhases = (
+				317A24EF26B3402300DBC5C2 /* Sources */,
+				317A24F026B3402300DBC5C2 /* Frameworks */,
+				317A24F126B3402300DBC5C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorExtension;
+			productName = MonitorExtension;
+			productReference = 317A24F326B3402300DBC5C2 /* MonitorExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		317CDCB226B0A3F20081FDD4 /* TestScreentimeAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 317CDCD526B0A3FF0081FDD4 /* Build configuration list for PBXNativeTarget "TestScreentimeAPI" */;
@@ -192,7 +209,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				317EBAA126B0CB6C0005ABA0 /* PBXTargetDependency */,
+				317A24F926B3402300DBC5C2 /* PBXTargetDependency */,
 			);
 			name = TestScreentimeAPI;
 			productName = TestScreentimeAPI;
@@ -235,23 +252,6 @@
 			productReference = 317CDCCD26B0A3FF0081FDD4 /* TestScreentimeAPIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		317EBA9826B0CB6C0005ABA0 /* BlockerMonitorExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 317EBAA626B0CB6C0005ABA0 /* Build configuration list for PBXNativeTarget "BlockerMonitorExtension" */;
-			buildPhases = (
-				317EBA9526B0CB6C0005ABA0 /* Sources */,
-				317EBA9626B0CB6C0005ABA0 /* Frameworks */,
-				317EBA9726B0CB6C0005ABA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BlockerMonitorExtension;
-			productName = BlockerMonitorExtension;
-			productReference = 317EBA9926B0CB6C0005ABA0 /* BlockerMonitorExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +262,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					317A24F226B3402300DBC5C2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					317CDCB226B0A3F20081FDD4 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -272,9 +275,6 @@
 					317CDCCC26B0A3FF0081FDD4 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 317CDCB226B0A3F20081FDD4;
-					};
-					317EBA9826B0CB6C0005ABA0 = {
-						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
@@ -294,12 +294,19 @@
 				317CDCB226B0A3F20081FDD4 /* TestScreentimeAPI */,
 				317CDCC226B0A3FF0081FDD4 /* TestScreentimeAPITests */,
 				317CDCCC26B0A3FF0081FDD4 /* TestScreentimeAPIUITests */,
-				317EBA9826B0CB6C0005ABA0 /* BlockerMonitorExtension */,
+				317A24F226B3402300DBC5C2 /* MonitorExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		317A24F126B3402300DBC5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		317CDCB126B0A3F20081FDD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,17 +330,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		317EBA9726B0CB6C0005ABA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				317EBA9C26B0CB6C0005ABA0 /* blockerList.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		317A24EF26B3402300DBC5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316AFB8626B341250091D14C /* MyMonitor.swift in Sources */,
+				316AFB8726B341350091D14C /* MyModel.swift in Sources */,
+				317A24F626B3402300DBC5C2 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		317CDCAF26B0A3F20081FDD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,18 +369,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		317EBA9526B0CB6C0005ABA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				317EBA9E26B0CB6C0005ABA0 /* ContentBlockerRequestHandler.swift in Sources */,
-				31E66AFB26B0D036005600C0 /* MyModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		317A24F926B3402300DBC5C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 317A24F226B3402300DBC5C2 /* MonitorExtension */;
+			targetProxy = 317A24F826B3402300DBC5C2 /* PBXContainerItemProxy */;
+		};
 		317CDCC526B0A3FF0081FDD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 317CDCB226B0A3F20081FDD4 /* TestScreentimeAPI */;
@@ -382,14 +387,65 @@
 			target = 317CDCB226B0A3F20081FDD4 /* TestScreentimeAPI */;
 			targetProxy = 317CDCCE26B0A3FF0081FDD4 /* PBXContainerItemProxy */;
 		};
-		317EBAA126B0CB6C0005ABA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 317EBA9826B0CB6C0005ABA0 /* BlockerMonitorExtension */;
-			targetProxy = 317EBAA026B0CB6C0005ABA0 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		317A24FC26B3402300DBC5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yazan.TestScreentimeAPI.MonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		317A24FD26B3402300DBC5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yazan.TestScreentimeAPI.MonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		317CDCD326B0A3FF0081FDD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -670,63 +726,18 @@
 			};
 			name = Release;
 		};
-		317EBAA426B0CB6C0005ABA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8T346G9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BlockerMonitorExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BlockerMonitorExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yazan.TestScreentimeAPI.BlockerMonitorExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		317EBAA526B0CB6C0005ABA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8T346G9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BlockerMonitorExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BlockerMonitorExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yazan.TestScreentimeAPI.BlockerMonitorExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		317A24FB26B3402300DBC5C2 /* Build configuration list for PBXNativeTarget "MonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317A24FC26B3402300DBC5C2 /* Debug */,
+				317A24FD26B3402300DBC5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		317CDCAE26B0A3F20081FDD4 /* Build configuration list for PBXProject "TestScreentimeAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -759,15 +770,6 @@
 			buildConfigurations = (
 				317CDCDC26B0A3FF0081FDD4 /* Debug */,
 				317CDCDD26B0A3FF0081FDD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		317EBAA626B0CB6C0005ABA0 /* Build configuration list for PBXNativeTarget "BlockerMonitorExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				317EBAA426B0CB6C0005ABA0 /* Debug */,
-				317EBAA526B0CB6C0005ABA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
