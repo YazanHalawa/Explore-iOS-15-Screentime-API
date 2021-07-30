@@ -20,8 +20,12 @@ class MyModel: ObservableObject {
         willSet {
             print ("got here \(newValue)")
             let applications = newValue.applicationTokens
+            let categories = newValue.categoryTokens
+            //let webCategories = newValue.webDomainTokens
             store.shield.applications = applications.isEmpty ? nil : applications
-            store.dateAndTime.requireAutomaticDateAndTime = true
+            store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.specific(categories, except: Set())
+            store.shield.webDomainCategories = ShieldSettings.ActivityCategoryPolicy.specific(categories, except: Set())
+
         }
     }
 
@@ -35,6 +39,17 @@ class MyModel: ObservableObject {
         catch {
             print ("Could not start monitoring \(error)")
         }
+
+        store.dateAndTime.requireAutomaticDateAndTime = true
+        store.account.lockAccounts = true
+        store.passcode.lockPasscode = true
+        store.siri.denySiri = true
+        store.appStore.denyInAppPurchases = true
+        store.appStore.maximumRating = 200
+        store.appStore.requirePasswordForPurchases = true
+        store.media.denyExplicitContent = true
+        store.gameCenter.denyMultiplayerGaming = true
+        store.media.denyMusicService = false
     }
 }
 
